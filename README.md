@@ -1,2 +1,2 @@
-# bootcamp-geracao-tech-unimed-BH-Fullstack
-Bootcamp Geração Tech Unimed-BG | FullStack
+# Bootcamp Geracao Tech Unimed-BH | Fullstack
+Curso/Bootcamp Unimed-BH ofertado em parceria com a DIO.
