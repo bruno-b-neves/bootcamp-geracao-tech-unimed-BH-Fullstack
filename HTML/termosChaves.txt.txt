@@ -1,7 +1,7 @@
 			Termos-chave	
 		
 
-download/Upload		host				multimídia
+download/Upload			host				multimídia
 navegador			HTML				nick
 banda larga			HTTP				online/offline
 cache				ícone				pixel
