@@ -11,7 +11,7 @@ Com esses elementos podemos agrupar tipos de conteúdo, alterar tamanho e forma 
 
 E agora podemos ver como é a estrutura básica de um arquivo HTML.
 
-A primeira linha do documento deve ser o <!DOCTYPE html>, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele está lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.
+A primeira linha do documento deve ser o !DOCTYPE html, apesar de parecer um elemento HTML ela apenas diz ao navegador que ele está lidando com um arquivo do tipo HTML5. Os elementos HTML vem logo abaixo.
 
 html
 
@@ -57,13 +57,13 @@ aside
 
 > É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do autor e publicidade. Normalmente são representadas como barras laterais.
 
-<footer>
+footer
 
 > Esse elemento representa o rodapé do conteúdo ou de parte dele, pois ele é aceito dentro de vários elementos, como article e section e até do body. Exemplos de conteúdo de um <footer> são informações de autor e links relacionados.
 
 h1-h6
 
-> Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo <h1> o mais importante e <h6> o menos. Uma dica: use apenas um <h1> por página, pois ele representa o objetivo da sua página.
+> Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. São utilizados para marcar a importância dos títulos, sendo h1 o mais importante e h6 o menos. Uma dica: use apenas um h1 por página, pois ele representa o objetivo da sua página.
 
 ### Prática
 > Dando continuidade ao nosso site iremos montar sua estrutura. Pensei em adicionarmos um cabeçalho com nosso nome, uma lista de posts (como um blog) e um rodapé para nossos contatos.
@@ -72,21 +72,20 @@ h1-h6
 
 > Depois criaremos a lista de postagens: abrimos um elemento section e dentro dele adicionamos outro <header> contendo um h2. Notem que eu posso ter mais de um header na página.
 
-> Para criar nossa postagem adicionamos um <article> com um <header> e um <h3>.
+> Para criar nossa postagem adicionamos um article com um header e um h3.
 
-> O último passo desta etapa é criar um rodapé para nossas informações de contato: crie um elemento footer antes de fechar o </body>.
+> O último passo desta etapa é criar um rodapé para nossas informações de contato: crie um elemento footer antes de fechar o /body.
 
 > Não se preocupe com o layout e com conteúdo da página, nós vamos tratar isso mais a frente.
 
-> Textos e links
+### Textos e links
 > A criação do HTML foi motivada pela necessidade de compartilhar textos e documentos, e mesmo depois de quase 30 anos, com toda a evolução da web, isso ainda representa uma boa parte do conteúdo da web.
 
 > Já falamos anteriormente sobre os elementos h1-h6 e, eles são essenciais para nos indicar visualmente a importância e localização de seções de texto na página, mas para textos maiores e mais densos usamos o elemento p.
   
-<p>
-> Representa um parágrafo, mas ele não suporta apenas texto, podemos adicionar imagens, código, vídeos e vários outros tipos de conteúdo dentro dele.
+> O p representa um parágrafo, mas ele não suporta apenas texto, podemos adicionar imagens, código, vídeos e vários outros tipos de conteúdo dentro dele.
 
-> Um outro elemento interessante e extremamente necessário na web é o <a> - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
+> Um outro elemento interessante e extremamente necessário na web é o a - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
 
 > O elemento a tem vários atributos, mas vamos focar em dois, o href e o target.
 
@@ -101,8 +100,8 @@ h1-h6
 
 > Criarei um hyperlink para meu perfil no LinkedIn: adicione o hyperlink no atributo href e o valor _blank no atributo target, assim o link será aberto em outra aba. E em algum outro lugar do texto adicionarei meu e-mail e um link para ele, desta forma: <a href="mailto:lucas@vilaboim.com" target="_blank">lucas@vilaboim.com</a>
 
-> Imagens
-> A web também é feita de imagens e para representá-las temos o elemento <img>, ele é um daqueles elementos sem tag de fechamento.
+Imagens
+> A web também é feita de imagens e para representá-las temos o elemento img, ele é um daqueles elementos sem tag de fechamento.
 
 > O elemento img é bem simples, contendo apenas 2 atributos próprios, o src e o alt.
 
@@ -115,32 +114,22 @@ h1-h6
 
 > Primeiro vamos colocar as imagens na pasta do nosso projeto. Para a imagem do cabeçalho eu escolhi uma foto minha com 100 pixels de largura e 100 pixels de altura e para a imagem da postagem eu procurei por html code no site Unsplash, escolhi uma das imagens e deixei ela com 960 pixels de largura por 322 pixels de altura.
 
-> Dentro do primeiro 
-  <header> 
-> da página e antes do 
-  <h1> 
-> iremos adicionar um elemento img e no atributo src colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado para a imagem, como no meu caso é uma ilustração, colocarei Ilustração do rosto de Lucas Vilaboim.
+> Dentro do primeiro header da página e antes do h1 iremos adicionar um elemento img e no atributo src colocamos o caminho para a nossa foto, /lucas-vilaboim.jpg, e o atributo alt deve conter um significado para a imagem, como no meu caso é uma ilustração, colocarei Ilustração do rosto de Lucas Vilaboim.
 
-> E dentro do 
-    <header> 
-> do 
-    <article> 
-> vamos fazer a mesma coisa, mas agora depois do 
-    <h3>
-> e no atributo alt colocaremos Editor de texto mostrando códigos HTML.
+> E dentro do header do article vamos fazer a mesma coisa, mas agora depois do h3 e no atributo alt colocaremos Editor de texto mostrando códigos HTML.
 
-> Listas
-> Os últimos elementos que veremos neste módulo são os relacionados a listas: <ul>, <ol> e <li>.
+Listas
+> Os últimos elementos que veremos neste módulo são os relacionados a listas: ul, ol e li.
 
 > Listas servem para agrupar uma coleção de itens, como uma lista de ingredientes ou, como será no nosso caso, uma lista com contatos.
 
 > O elemento ul cria uma lista não ordenada, onde a ordem dos elementos não é importante, e é representada com pontos, círculos ou quadrados.
 
-> O <ol> serve para criar lista ordenadas, nessas a ordem importa, portanto elas são representadas com números, algarismos romanos ou letras.
+> O ol serve para criar lista ordenadas, nessas a ordem importa, portanto elas são representadas com números, algarismos romanos ou letras.
 
-> E o elemento li é um item dentro de uma dessas listas. Um <li> pode conter vários tipos de conteúdos, como parágrafos, imagens e até outras listas.
+> E o elemento li é um item dentro de uma dessas listas. Um li pode conter vários tipos de conteúdos, como parágrafos, imagens e até outras listas.
 
-> Prática
+### Prática
 > Adicionaremos uma lista de contatos ao rodapé da nossa página, e para isso usaremos também o elemento a que vimos anteriormente.
 
-> Crie um elemento ul e dentro dele adicione um <li> com um elemento a, no atributo href adicione o link de alguma rede social que você mantenha e, no conteúdo da âncora coloque o nome dessa rede.
+> Crie um elemento ul e dentro dele adicione um li com um elemento a, no atributo href adicione o link de alguma rede social que você mantenha e, no conteúdo da âncora coloque o nome dessa rede.
